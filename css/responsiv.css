@@ -1,0 +1,41 @@
+canvas {
+    display: block;
+}
+
+@media only screen and (max-width: 720px) {
+    canvas {
+        width: 100%;
+    }
+    .play-again-button {
+        position: fixed;
+        bottom: 0% !important;
+        right: 0% !important;
+        top: 20px;
+        left: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    canvas {
+        height: 70vh;
+    }
+
+    .move-bar-container {
+        bottom: 17vh;
+    }
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+    canvas {
+        height: 70vh;
+    }
+
+    
+} 
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    canvas {
+        height: 100vh;
+    }
+} 

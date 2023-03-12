@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Pollo Loco</title>
+  <link rel="icon" href="img/4.Secuencias_Enemy_gigantón-Doña_Gallinota-/1.Caminata/G1.png">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsiv.css">
+
+  <script src="models/world.class.js"></script>
+  <script src="models/drawable-object.class.js"></script>
+  <script src="models/movable-object.class.js"></script>
+  <script src="models/bottlesBar.class.js"></script>
+  <script src="models/status-bar.class.js"></script>
+  <script src="models/statusbarcoins.class.js"></script>
+  <script src="models/winner.class.js"></script>
+  <script src="models/gameover.class.js"></script>
+  <script src="models/character.class.js"></script>
+  <script src="models/chicken.class.js"></script>
+  <script src="models/cloud.class.js"></script>
+  <script src="models/background-object.class.js"></script>
+  <script src="models/keyboard.class.js"></script>
+  <script src="models/level.class.js"></script>
+  <script src="models/finalboss.class.js"></script>
+  <script src="models/coin.class.js"></script>
+  <script src="models/bottles.class.js"></script>
+  <script src="models/throwable-object.class.js"></script>
+  <script src="levels/pushobjects.js"></script>
+  <script src="levels/level1.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/touchListener.js"></script>
+  <script src="js/keyboardListener.js"></script>
+</head>
+
+<body onload="init()">
+
+  <div id="background" class="background">
+    <div id="insidebox" class="insidebox center">
+
+      <div id="move-bar" class="move-bar-container d-none">
+        <div class="play-icons-container center">
+          <img id="move-left-btn" class="mr-20" src="img/handyview/arrow-left.png">
+          <img id="move-right-btn" class="ml-20" src="img/handyview/arrow-right.png">
+        </div>
+        <div class="play-icons-container center">
+          <img id="jump-btn" class="mr-20" src="img/handyview/arrow-jump.png">
+          <img id="throw-bottle-btn" class="ml-20" src="img/handyview/bottel.png">
+        </div>
+      </div>
+      
+      <canvas id="canvas" width="720" height="480"></canvas>
+
+      <img class="drop-menu-game-notes" onclick="showGameNotes()" src="img/dropmenu/icons8-50.png">
+    
+    </div>
+
+    <div id="gameNotes" class="game-notes-container d-none">
+      <h1>Hello Player, help Pepe to cross the desert and collect bottles to defeat the boss.</h1>
+      <p>Jump = space, Go right = arrow right, Go left = arrow left, Throw bottle = D, Open Fullscreen = F</p>
+    </div>
+
+  </div>
+
+  <div id="gamenewstartbutton" class="play-again-button d-none">
+    <button onclick="startgameagain()">Play again !</button>
+  </div>
+
+</body>
+
+</html>

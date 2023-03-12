@@ -1,0 +1,10 @@
+audio/
+img/
+notes/
+out/
+schriftart/
+rest/
+node_modules/
+jsdoc.json
+package-lock.json
+package.json
